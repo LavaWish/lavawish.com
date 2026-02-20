@@ -1,18 +1,72 @@
-html, body {
-    height: 100%;
-    width: 100%;
+/* Reset and Base Styles */
+body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff; /* Explicitly white background */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #0D1117; /* Dark text color, approximated */
 }
 
-h1 {
-    font-size: 10vw; /* Using viewport width for responsive size */
-    font-weight: 500; /* A medium weight, not too bold */
-    color: #000000;
-    margin: 0; /* Remove default margin */
-    padding-bottom: 10vh; /* This reduces the negative space by pushing it down less than center */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAECEF; /* Light grey border */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3B82F6; /* Blue color from the logo */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4B5563; /* Greyish text for nav links */
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #0D1117;
+}
+
+.button.primary {
+    background-color: #3B82F6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.button.primary:hover {
+    background-color: #2563EB;
 }
